@@ -1,0 +1,12 @@
+##-----------------------
+## first self .gitignore
+##-----------------------
+
+# Exclude pycharm generated workspace information 
+**/.idea/
+
+# Exclude pycharm generated workspace information
+**/*.egg-info/
+
+# Python bytecode cache
+__pycache__/
