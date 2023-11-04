@@ -1,6 +1,6 @@
 import itertools
 
-f = open("Day8.txt")
+f = open("Day8.txt") 
 data = f.readlines()
 
 # Part 1
