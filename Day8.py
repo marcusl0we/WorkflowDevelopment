@@ -1,5 +1,4 @@
 import itertools
-import difflib
 
 f = open("Day8.txt")
 data = f.readlines()
