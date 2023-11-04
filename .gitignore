@@ -2,6 +2,9 @@
 ## first self .gitignore
 ##-----------------------
 
+# Exclude text input files so cloners can use their own
+*.txt
+
 # Exclude pycharm generated workspace information 
 **/.idea/
 
