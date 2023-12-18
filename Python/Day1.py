@@ -9,7 +9,7 @@ def number_of_increasing_values(val_list: list) -> int:
 
 
 # Part 1
-f = open("input.txt")
+f = open("..\Personal txt Inputs\Day1.txt")
 valuesList = f.readlines()
 numIncreased = number_of_increasing_values(valuesList)
 print(f"The number of measurements larger than the previous for the raw data are: {numIncreased}")

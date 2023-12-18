@@ -10,7 +10,7 @@ def card_winner_check(i_card):  # function to check if an individual card has wo
     return 0
 
 
-f = open("Day4.txt")
+f = open("..\Personal txt Inputs\Day4.txt")
 data = f.readlines()
 
 # reformat first line of .txt to proper list of integers

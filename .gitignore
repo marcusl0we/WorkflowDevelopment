@@ -5,6 +5,12 @@
 # Exclude text input files so cloners can use their own
 *.txt
 
+# Exclude built .exe files from c++ code building
+*.exe
+
+# Exclude pycharm generated workspace information 
+**/.vscode/
+
 # Exclude pycharm generated workspace information 
 **/.idea/
 

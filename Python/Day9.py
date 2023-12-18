@@ -1,6 +1,6 @@
 import numpy as np
 
-f = open("Day9.txt")
+f = open("..\Personal txt Inputs\Day9.txt")
 data = f.readlines()
 
 # format data into a numpy array

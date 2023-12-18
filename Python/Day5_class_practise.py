@@ -65,7 +65,7 @@ class HydrothermalVentDiagram:
 
 
 if __name__ == '__main__':  # not really needed but done so external import of classes above won't run code below
-    f = open("Day5.txt")
+    f = open("..\Personal txt Inputs\Day5.txt")
     data = f.readlines()  # reformat input text to a list of 4 integers without other stuff
     data = [x.strip().replace(' -> ', ',') for x in data]
     data = [x.split(',') for x in data]

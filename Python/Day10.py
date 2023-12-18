@@ -1,4 +1,4 @@
-f = open("Day10.txt")
+f = open("..\Personal txt Inputs\Day10.txt")
 data = f.readlines()
 
 data = [x.strip() for x in data]

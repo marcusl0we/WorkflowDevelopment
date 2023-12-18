@@ -89,7 +89,7 @@ def find_paths(graph, source, destination, Part_1_or_2):
     return number_of_paths
 
 
-f = open("Day12.txt")
+f = open("..\Personal txt Inputs\Day12.txt")
 data = f.readlines()
 
 data = [x.strip().split('-') for x in data]

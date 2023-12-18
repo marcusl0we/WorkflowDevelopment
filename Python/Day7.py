@@ -1,4 +1,4 @@
-f = open("Day7.txt")
+f = open("..\Personal txt Inputs\Day7.txt")
 data = f.readlines()
 
 # Part 3 - refactor the two lines of code added to solve Part 2 into a solution that gives both Part 1 and 2 at once

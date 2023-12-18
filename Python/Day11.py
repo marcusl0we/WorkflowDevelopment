@@ -1,6 +1,6 @@
 import numpy as np
 
-f = open("Day11.txt")
+f = open("..\Personal txt Inputs\Day11.txt")
 data = f.readlines()
 
 # reformat to proper list of integer matrix rows

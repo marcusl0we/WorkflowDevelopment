@@ -28,7 +28,7 @@ def useful_data_out_for_position(bin_list, position):
 
 
 # Part 1
-f = open("Day3.txt")
+f = open("..\Personal txt Inputs\Day3.txt")
 binary_list = f.readlines()
 num_bits = 12
 

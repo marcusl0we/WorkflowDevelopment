@@ -25,7 +25,7 @@ def get_positional_data_from_instructions(instructions: list, part2: bool):
     return horizontal_pos, depth_pos, aim
 
 
-f = open("Day2.txt")
+f = open("..\Personal txt Inputs\Day2.txt")
 instruction_list = f.readlines()
 
 # Part 1
