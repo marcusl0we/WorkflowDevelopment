@@ -77,11 +77,11 @@ int main() {
         }
     }
     int epsilon_rate_dec = stoi(epsilon_rate, nullptr, 2);
-    cout << "The epsilon_rate: binary = " << epsilon_rate << ", decimal = " << epsilon_rate_dec << endl;
+    cout << "The epsilon rate: binary = " << epsilon_rate << ", decimal = " << epsilon_rate_dec << endl;
     
     int power_consumption_dec = gamma_rate_dec * epsilon_rate_dec;
     string power_consumption = bitset<24>(gamma_rate_dec * epsilon_rate_dec).to_string();
-    cout << "The power_consumption: binary = " << power_consumption << ", decimal = " << power_consumption_dec << endl << endl;
+    cout << "The power consumption: binary = " << power_consumption << ", decimal = " << power_consumption_dec << endl << endl;
 
 
     // Part 2 
@@ -106,7 +106,7 @@ int main() {
 
     string oxygen_generator_rating = filtered_list[0];  // filtered_list should only contain one value now
     int oxygen_generator_rating_dec = stoi(oxygen_generator_rating, nullptr, 2);
-    cout << "The oxygen_generator_rating: binary = " << oxygen_generator_rating << ", decimal = " << oxygen_generator_rating_dec << endl;
+    cout << "The oxygen generator rating: binary = " << oxygen_generator_rating << ", decimal = " << oxygen_generator_rating_dec << endl;
 
     // use the function to loop over a filtered list until the filtered list becomes one value for c02 scrubber rating
     // essentially same code as above but switch the list that gets assigned to filtered list
@@ -130,11 +130,11 @@ int main() {
 
     string c02_scrubber_rating = filtered_list[0];  // filtered_list should only contain one value now
     int c02_scrubber_rating_dec = stoi(c02_scrubber_rating, nullptr, 2);
-    cout << "The c02_scrubber_rating: binary = " << c02_scrubber_rating << ", decimal = " << c02_scrubber_rating_dec << endl;
+    cout << "The c02 scrubber rating: binary = " << c02_scrubber_rating << ", decimal = " << c02_scrubber_rating_dec << endl;
 
     int life_support_rating_dec = oxygen_generator_rating_dec * c02_scrubber_rating_dec;
     string life_support_rating = bitset<25>(oxygen_generator_rating_dec * c02_scrubber_rating_dec).to_string();
-    cout << "The life_support_rating: binary = " << life_support_rating << ", decimal = " << life_support_rating_dec << endl;
+    cout << "The life support rating: binary = " << life_support_rating << ", decimal = " << life_support_rating_dec << endl;
 
 };
 
