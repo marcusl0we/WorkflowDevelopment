@@ -8,8 +8,8 @@ using namespace std;
 
 int number_of_increasing_values(vector<int> val_list) {
     int num_increased = 0;
-    for (int idx = 0; idx < val_list.size(); ++idx) { // loop starting at zero up to size of vector
-        if ((idx >= 1) && (val_list[idx] > val_list[idx - 1])) {  // if index is bigger than previous add one to num_increased
+    for (int idx = 0; idx < val_list.size(); ++idx) {               // loop starting at zero up to size of vector
+        if ((idx >= 1) && (val_list[idx] > val_list[idx - 1])) {    // if index is bigger than previous add one to num_increased
             num_increased += 1;
         }
     }
@@ -35,10 +35,10 @@ int main() {
     int windowSize = 3;
     vector<int> movSum = {};
     for (int i = windowSize; i < valuesList.size()+1; ++i) {  //start at index windowSize, up to length of original list
-        movSum.push_back(  // now append the sum of a subvector of size three using accumulate
+        movSum.push_back(       // now append the sum of a subvector of size three using accumulate
                          accumulate(valuesList.begin()+i-windowSize, valuesList.begin()+i, 0) 
-                        );  // index for arguments use the beginning of valuesList vector position, which we then add
-                            // beginning position of sub vector and end position of subvector we want respectively
+                        );      // index for arguments use the beginning of valuesList vector position, which we then add
+                                // beginning position of sub vector and end position of subvector we want respectively
     }
     numIncreased = number_of_increasing_values(movSum);
     cout << "The number of measurements larger than the previous for the averaged data are: " << numIncreased << endl;
