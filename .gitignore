@@ -2,9 +2,6 @@
 ## first self .gitignore
 ##-----------------------
 
-# Exclude text input files so cloners can use their own
-*.txt
-
 # Exclude built .exe files from c++ code building
 *.exe
 
