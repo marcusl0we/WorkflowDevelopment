@@ -41,24 +41,33 @@ int card_winner_check(vector<vector<int>> i_card) {
     return 0;
 }
 
-// structure to save row and column info of a located number and where it is on card
+// structure to save row and column info of a located number and where it is in matrix
 struct row_col_info {
     int row;
     int column;
 };
 
-// function returns a vector of row_col_info as idk if a card will have that number more than once? 
+// function returns a vector of row_col_info as idk if a matrix will have that number more than once?
 // idk tbf cos i assume later that theres only one and only use the first item in this vector anyway
-vector<row_col_info> np_where(vector<vector<int>>  card, int item){
+vector<row_col_info> np_where(vector<vector<int>>  matrix, int item, string equality = "==") {
     vector<row_col_info> find;
     row_col_info located;
 
-    for (int row = 0; row < card.size(); row++) {
-        for (int column = 0; column < card[row].size(); column++) {
-            if (card[row][column] == item) {
-                located.row = row;
-                located.column = column;
-                find.push_back(located);
+    for (int row = 0; row < matrix.size(); row++) {
+        for (int column = 0; column < matrix[row].size(); column++) {
+            if (equality == "==") {
+                if (matrix[row][column] == item) {
+                    located.row = row;
+                    located.column = column;
+                    find.push_back(located);
+                }
+            }
+            else if (equality == ">=") {
+                if (matrix[row][column] >= item) {
+                    located.row = row;
+                    located.column = column;
+                    find.push_back(located);
+                }
             }
         }
     }
