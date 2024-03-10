@@ -5,8 +5,9 @@
 # Exclude built .exe files from c++ code building
 *.exe
 
-# Exclude pycharm generated workspace information 
+# Exclude VS generated workspace information 
 **/.vscode/
+**/.vs/
 
 # Exclude pycharm generated workspace information 
 **/.idea/
