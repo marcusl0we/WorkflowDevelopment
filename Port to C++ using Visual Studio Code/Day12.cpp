@@ -10,8 +10,6 @@
 #include <unordered_map>
 #include <set>
 
-#include "declarations.h"
-
 using namespace std;
 
 int count_paths(vector<string>& path, bool& print_output)
@@ -168,7 +166,7 @@ int find_paths(const unordered_map<string, vector<string>>& graph, const string 
     return number_of_paths;
 }
 
-int Day12()
+int main()
 {
     ifstream myfile("..\\Personal txt Inputs\\Day12.txt");          //create an input stream object from file
     string file_line;                                               //create line object to read into
@@ -205,10 +203,9 @@ int Day12()
     int num_paths = find_paths(G, "start", "end", "Part 1");
     cout << "The number of paths from start to end for Part 1 was " << num_paths << endl;
 
-    // LONGER TIME COMPLEXITY THAN PYTHON VERSION FOR SOME REASON FOR PART 2
-    // ~6 mins to complete in C++
-    // vs
-    // ~40 secs to complete in Python
+    // As its own indiviual self contained single C++ file, time taken for Part 2 is similar to
+    // the Python version, it is only within the VS Commuinity/Pro project it is slowed down to 
+    // several minutes?
     int num_paths_2 = find_paths(G, "start", "end", "Part 2");
     cout << "The number of paths from start to end for Part 2 was " << num_paths_2 << endl;
 
