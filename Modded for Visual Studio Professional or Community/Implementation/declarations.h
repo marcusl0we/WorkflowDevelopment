@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <string>
+#include <unordered_map>
 
 using namespace std;
 
@@ -37,15 +38,12 @@ int Day4();
 // DECLARATIONS FOR Day5
 int Day5();
 
-
 // DECLARATIONS FOR Day6
 vector<int> get_input_from_data();
 int Day6();
 
-
 // DECLARATIONS FOR Day7
 int Day7();
-
 
 // DECLARATIONS FOR Day8
 auto input_decipher(vector<string> input_under_test);
@@ -70,3 +68,9 @@ struct flash_stepper_info {
 };
 flash_stepper_info flash_stepper(const int& n, vector<vector<int>>& _grid, const vector<int>& dimensions, const int& grid_size);
 int Day11();
+
+// DECLARATIONS FOR Day12
+int count_paths(vector<string>& path, bool& print_output);
+bool cave_not_been_visited(string& x, vector<string>& path, string Part_1_or_2);
+int find_paths(const unordered_map<string, vector<string>>& graph, const string source, const string destination, const string Part_1_or_2);
+int Day12();

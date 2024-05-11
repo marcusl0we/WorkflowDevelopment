@@ -8,6 +8,8 @@
 # Exclude VS generated workspace information 
 **/.vscode/
 **/.vs/
+**/Modded f.*/
+**/x64/
 
 # Exclude pycharm generated workspace information 
 **/.idea/

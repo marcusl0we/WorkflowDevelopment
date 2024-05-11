@@ -14,7 +14,7 @@
 
 using namespace std;
 
-int count_paths(vector<string>& path, bool& print_output) 
+int count_paths(vector<string>& path, bool& print_output)
 {
     if (print_output)
     {
@@ -111,7 +111,7 @@ bool cave_not_been_visited(string& x, vector<string>& path, string Part_1_or_2)
                 {
                     return false;
                 }
-                else 
+                else
                 {
                     return true;
                 }
@@ -131,7 +131,7 @@ int find_paths(const unordered_map<string, vector<string>>& graph, const string 
     path.push_back(source);
     q.push_back(path);
 
-    while (!q.empty()) 
+    while (!q.empty())
     {
         path = q.front();
         q.pop_front();
@@ -147,7 +147,7 @@ int find_paths(const unordered_map<string, vector<string>>& graph, const string 
         for (int i = 0; i < loopend; i++)
         {
             vector<string> nodes_connected_to_last = graph.at(last);
-            
+
             if (cave_not_been_visited(nodes_connected_to_last[i], path, Part_1_or_2))
             {
                 vector<string> new_path = path;
@@ -204,5 +204,5 @@ int Day12()
     int num_paths_2 = find_paths(G, "start", "end", "Part 2");
     cout << "The number of paths from start to end for Part 2 was " << num_paths_2 << endl;
 
-	return 0;
+    return 0;
 }
